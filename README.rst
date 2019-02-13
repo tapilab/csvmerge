@@ -1,16 +1,16 @@
 ========
-xlsmerge
+csvmerge
 ========
 
 
-.. image:: https://img.shields.io/pypi/v/xlsmerge.svg
-        :target: https://pypi.python.org/pypi/xlsmerge
+.. image:: https://img.shields.io/pypi/v/csvmerge.svg
+        :target: https://pypi.python.org/pypi/csvmerge
 
-.. image:: https://img.shields.io/travis/aronwc/xlsmerge.svg
-        :target: https://travis-ci.org/aronwc/xlsmerge
+.. image:: https://img.shields.io/travis/aronwc/csvmerge.svg
+        :target: https://travis-ci.org/aronwc/csvmerge
 
-.. image:: https://readthedocs.org/projects/xlsmerge/badge/?version=latest
-        :target: https://xlsmerge.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/csvmerge/badge/?version=latest
+        :target: https://csvmerge.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 
@@ -20,7 +20,7 @@ merge excel files
 
 
 * Free software: BSD license
-* Documentation: https://xlsmerge.readthedocs.io.
+* Documentation: https://csvmerge.readthedocs.io.
 
 
 Features

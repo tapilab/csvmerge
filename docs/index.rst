@@ -1,4 +1,4 @@
-Welcome to xlsmerge's documentation!
+Welcome to csvmerge's documentation!
 ======================================
 
 .. toctree::

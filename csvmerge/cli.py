@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Console script for xlsmerge."""
+"""Console script for csvmerge."""
 import click
 import numpy as np
 import pandas as pd
@@ -13,7 +13,7 @@ import sys
 @click.option('-k2', '--to-key', required=True, help='key in TO file')
 @click.option('-o', '--output-file', required=True, type=click.Path(exists=False), help='output file to write results (.csv)')
 def main(from_file, to_file, from_key, to_key, output_file):
-    """Console script for xlsmerge."""
+    """Console script for csvmerge."""
     of = open(output_file, 'wt')
     f1_df = read_file(from_file, from_key)
     print('read %d from %s' % (len(f1_df), from_file))

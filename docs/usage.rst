@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use xlsmerge in a project::
+To use csvmerge in a project::
 
-    import xlsmerge
+    import csvmerge

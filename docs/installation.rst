@@ -8,13 +8,13 @@ Installation
 Stable release
 --------------
 
-To install xlsmerge, run this command in your terminal:
+To install csvmerge, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install xlsmerge
+    $ pip install csvmerge
 
-This is the preferred method to install xlsmerge, as it will always install the most recent stable release.
+This is the preferred method to install csvmerge, as it will always install the most recent stable release.
 
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
@@ -26,19 +26,19 @@ you through the process.
 From sources
 ------------
 
-The sources for xlsmerge can be downloaded from the `Github repo`_.
+The sources for csvmerge can be downloaded from the `Github repo`_.
 
 You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/aronwc/xlsmerge
+    $ git clone git://github.com/aronwc/csvmerge
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/aronwc/xlsmerge/tarball/master
+    $ curl  -OL https://github.com/aronwc/csvmerge/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/aronwc/xlsmerge
-.. _tarball: https://github.com/aronwc/xlsmerge/tarball/master
+.. _Github repo: https://github.com/aronwc/csvmerge
+.. _tarball: https://github.com/aronwc/csvmerge/tarball/master
