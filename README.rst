@@ -37,9 +37,11 @@ Usage
 Given two files `china.csv` and `chicago.csv`:
 
 .. code-block:: console
+
     csvmerge  -f1 china.csv -f2 chicago.csv -k2 'Global Duns No' -k1 'D-U-N-S@ Number' -o output.csv
 
 .. code-block:: console
+
     Usage: csvmerge [OPTIONS]
 
       Join two csv files on specified keys and write the results.
