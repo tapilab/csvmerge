@@ -16,17 +16,43 @@ csvmerge
 
 
 
-merge excel files
+merge csv files
 
 
 * Free software: BSD license
 * Documentation: https://csvmerge.readthedocs.io.
 
 
-Features
---------
+Installation
+------------
 
-* TODO
+* `pip install git+https://github.com/tapilab/csvmerge.git`
+
+
+Usage
+-----
+
+Given two files `china.csv` and `chicago.csv`:
+
+* ``csvmerge  -f1 china.csv -f2 chicago.csv -k2 'Global Duns No' -k1 'D-U-N-S@ Number' -o output.csv``
+
+::
+Usage: csvmerge [OPTIONS]
+
+  Join two csv files on specified keys and write the results.
+
+Options:
+  -f1, --from-file PATH   input file to merge FROM (.csv). This is typically
+                          the smaller file.  [required]
+  -f2, --to-file PATH     input file to merge TO (.csv). This can be a very
+                          large file, as it is only streamed from disk, never
+                          stored completely in memory.  [required]
+  -k1, --from-key TEXT    field to match in the FROM file  [required]
+  -k2, --to-key TEXT      field to match in the TO file  [required]
+  -o, --output-file PATH  output file to write results (.csv)  [required]
+  --help                  Show this message and exit.
+::
+
 
 Credits
 -------
