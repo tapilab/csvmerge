@@ -18,13 +18,11 @@ def main(from_file, to_file, from_key, to_key, output_file):
     of = open(output_file, 'wt')
     f1_df = read_file(from_file, from_key)
     duns2row_f1 = {r[from_key]:r for i,r in f1_df.iterrows()}
-    #print(list(duns2row_f1.items())[:10])
     print('read %d from %s' % (len(f1_df), from_file))
     header = False
     header1 = ['MATCH_%s' % c for i,c in enumerate(f1_df.columns)]
     for row in iter_big_file(to_file, to_key):
         header2 = [c for i,c in enumerate(row.index)]
-        #if row.name in f1_df.index:
         if row[to_key] in duns2row_f1:
             match = duns2row_f1[row[to_key]]
             match = pd.DataFrame([match])
@@ -42,12 +40,14 @@ def main(from_file, to_file, from_key, to_key, output_file):
 
 
 def read_file(fname, key):
+    """ Read the smaller csv file into memory. """
     df = pd.read_csv(fname, lineterminator='\n', index_col=False)
     df.replace('[\n\t\r]', ' ', regex=True, inplace=True)
     return df
 
 
 def iter_big_file(fname, key, chunksize=1000):
+    """ Stream the larger csv file in chunks. """
     for chunk in (pd.read_csv(fname, lineterminator='\n', chunksize=chunksize, index_col=False)):
         chunk.replace('[\n\t\r]', ' ', regex=True, inplace=True)
         for i, row in chunk.iterrows():

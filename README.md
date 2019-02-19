@@ -1,2 +1,3 @@
-# xlsmerge
-Merge excel files by given fields
+# csvmerge
+Merge csv files by given fields
+
